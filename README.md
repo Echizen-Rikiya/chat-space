@@ -4,7 +4,7 @@
 
 |Colum|Type|Options|
 |-----|----|-------|
-|user_name|string|null: false|
+|name|string|null: false|
 |mail|string|null: false, unique: true|
 |password|integer|null: false|
 ### Association
@@ -17,11 +17,12 @@
 
 |Colum|Type|Options|
 |-----|----|-------|
-|group_name|string|ull: false|
+|name|string|null: false|
 ### Association
 
-- has_many :users, through: :groups_user
-- has_many :message
+- has_many :users, through: :groups_users
+- has_many :groups_users
+- has_many :messages
 
 ## groups_usersテーブル
 
