@@ -1,0 +1,34 @@
+.Main_chat
+  .Header
+    .CenterHeader__group
+      .CenterHeader__groupName 
+        test
+        %ul.member-list 
+          Member :
+          %li.member  masa
+    %a.editButton{ href:'#'}
+      EDIT
+  .Message
+    .Message__box
+      .MessageInfo
+        .MessageInfo__userName masa
+        .MessageInfo__date 2020/06/27(Sta)09:00:00
+      .Message__text こんにちは
+      .MessageInfo
+        .MessageInfo__userName masa
+        .MessageInfo__date 2020/06/27(Sta)09:00:00
+      .Message__text こんにちは
+      .MessageInfo
+        .MessageInfo__userName masa
+        .MessageInfo__date 2020/06/27(Sta)09:00:00
+      .Message__text こんにちは
+  .Form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text",placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
+      
+    

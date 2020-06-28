@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+.Wrapper {
+  display: flex;
+  height: 100vh;
+
+  //ユーザー名とアイコン
+
+  .Side_bar {
+    width: 300px;
+    background-color: #253141;
+    .User-name {
+      height: 100px;
+      background-color: #253141;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__side-box {
+        height: 20px;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+          color: white;
+        }
+        .right {
+          width: 40px;
+          display: flex;
+          .right__btn{
+            color: #ffffff;
+            text-decoration:none;
+            &--tool {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    
+    } 
+
+    //グループ一覧
+
+    .Group-list {
+      height: calc(100vh - 100px);
+      background-color: #2f3e51;
+        .Group {
+          padding: 20px 0 40px;
+          &__name {
+            font-size: 15px;
+          }
+          &__message {
+            font-size: 11px;
+            margin-top: 5px;
+          }
+        }
+    }
+    
+  } 
+  .Main_chat {
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+
+    //グループ概要のコーディング
+
+      .Header {
+        height: 100px;
+        padding: 0 40px;
+        border-bottom: solid 1pz #eee;
+        display: flex;
+        justify-content: space-between;
+        
+          .CenterHeader__groupName {
+            color: #333;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            .member-list {
+              color: #999999;
+              font-size: 12px;
+              display: flex;
+              margin-top: 15px;
+              .member {
+                padding-left: 5px;
+              }
+            }
+          }
+          .editButton {
+            display: block;
+            border: 1px solid #18aef0;
+            color: #38aef0;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 28px;
+            padding: 0 20px;
+            text-decoration: none;
+          }
+      }
+
+      //メッセージ一覧のコーディング
+
+      .Message {
+        height: calc(100vh - 190px);
+        background-color: #fafafa;
+        padding: 35px 40px 0;
+        box-sizing: border-box;
+        overflow: scroll;
+        .Message__box {
+          margin-bottom: 46px;
+          .MessageInfo {
+            display: flex;
+            .MessageInfo__userName {
+              color: #434a54;
+              font-size: 16px;
+              font-weight: bold;
+            }  
+            .MessageInfo__date{
+              color: #999999;
+              font-size: 12px;
+              padding-left: 10px;
+            }
+          }
+          .Message__text {
+            margin-top: 12px;
+          }
+        }
+      }
+
+      //投稿フォームのコーディング
+      
+      .Form {
+        height: 90px;
+        background-color: #d2d2d2;
+        padding: 20px 40px;
+        
+        form {
+          display: flex;
+          .input-box {
+            display: flex;
+            width: 100%;
+            position: relative;
+            &__text {
+              height: 50px;
+              width: 100%;
+              color: #434a54;
+              border-style: none;
+              padding: 0 40px 0 10px;
+            }
+            &__image {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              cursor: pointer;
+              font-size: 1.3rem;
+
+              &__file {
+                display: none;
+              }
+            }
+          }  
+          .submit-btn {
+            width: 100px;
+            height: 50px;
+            margin-left: 15px;
+            background-color: #38aef0;
+            color: white;
+            cursor: pointer;
+            border: none;
+          }
+
+
+        
+          
+            
+            
+          
+        }
+
+      }
+  
+  } 
+}
