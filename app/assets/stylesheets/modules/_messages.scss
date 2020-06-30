@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.Wrapper {
+.wrapper {
   display: flex;
   height: 100vh;
 
@@ -46,6 +46,10 @@
       background-color: #2f3e51;
         .Group {
           padding: 20px 0 40px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
           &__name {
             font-size: 15px;
           }
